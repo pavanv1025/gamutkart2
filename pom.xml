@@ -30,8 +30,24 @@
 	</dependencies>
 
 	<build>
-		<finalName>gamutkart</finalName>
+	  <plugins>
+    		<plugin>
+      			<groupId>org.apache.maven.plugins</groupId>
+      			<artifactId>maven-war-plugin</artifactId>
+      			<version>3.3.2</version>
+      			<executions>
+        			<execution>
+          				<phase>package</phase>
+          				<goals>
+            					<goal>war</goal>
+          				</goals>
+        			</execution>
+      			</executions>
+    		   </plugin>
+           </plugins>
+  	   <finalName>gamutkart</finalName>
 	</build>
+
 	
 </project>
 
